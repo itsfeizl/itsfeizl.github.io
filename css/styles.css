@@ -154,8 +154,8 @@ img {
 }
 
 .profile-pic {
-    width: 60%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 30px auto 0;
     overflow: hidden;  
 }
 
@@ -165,7 +165,7 @@ img {
 }
 
 .image-hr {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid rgba(1, 162, 226, 1);
 }

@@ -54,7 +54,11 @@
           aria-label="Toggle navigation"
           style="border: 0"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon-open">
+            <div class="bar"></div>
+            <div class="bar middle-bar"></div>
+            <div class="bar bottom-bar"></div>
+          </span>
         </button>
         <div
           class="offcanvas offcanvas-end"
@@ -69,10 +73,13 @@
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
             <button
               type="button"
-              class="btn-close"
+              class="navbar-toggler-icon-close"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
+            >
+                <div class="bar diagonal"></div>
+                <div class="bar diagonal-x"></div>
+            </button>
           </div>
           <div
             class="offcanvas-body"

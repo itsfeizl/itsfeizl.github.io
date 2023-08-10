@@ -30,19 +30,48 @@ img {
 
 /*  NAVBAR SECTION  */ 
 
-.navbar-toggler-icon {
-    background-image: url('images/bars-open.png'); /* Change this to the URL of your custom icon */
-    width: 24px; /* Adjust width as needed */
+.bar {
+    height: 3px;
+    width: 80%;
+    background-color: #01a2e2;
+    border-radius: 2px;
+}
+
+.middle-bar {
+    width: 100%;
+}
+
+.bottom-bar {
+    width: 65%;
+}
+
+.diagonal {
+    background-color: #fff;
+    width: 100%;
+    transform: rotateY(0deg) rotate(135deg)
+}
+
+.diagonal-x {
+    background-color: #fff;
+    width: 100%;
+    transform: rotateY(0deg) rotate(45deg)
+}
+
+.navbar-toggler-icon-open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 35px; /* Adjust width as needed */
     height: 24px; /* Adjust height as needed */
     background-size: cover;
 }
 
-.btn-close {
-    background-image: url('mages/close.png');
-    background-size: contain;
-    width: 20px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
-    opacity: 1; /* Reset opacity to ensure the icon is fully visible */
+.navbar-toggler-icon-close {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: #01a2e2;
 }
 
 .navbar-toggler:focus,

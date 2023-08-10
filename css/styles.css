@@ -62,9 +62,6 @@ img {
 }
 
 .navbar-toggler {
-    display: flex;
-    align-items: flex-end;
-    background-color: #ccc;
     padding: 0;
 }
 

@@ -31,14 +31,14 @@ img {
 /*  NAVBAR SECTION  */ 
 
 .navbar-toggler-icon {
-    background-image: url('bars-open.png'); /* Change this to the URL of your custom icon */
+    background-image: url('images/bars-open.png'); /* Change this to the URL of your custom icon */
     width: 24px; /* Adjust width as needed */
     height: 24px; /* Adjust height as needed */
     background-size: cover;
 }
 
 .btn-close {
-    background-image: url('close.png');
+    background-image: url('images/close.png');
     background-size: contain;
     width: 20px; /* Adjust width as needed */
     height: 20px; /* Adjust height as needed */

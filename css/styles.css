@@ -38,7 +38,7 @@ img {
 }
 
 .btn-close {
-    background-image: url('images/close.png');
+    background-image: url('mages/close.png');
     background-size: contain;
     width: 20px; /* Adjust width as needed */
     height: 20px; /* Adjust height as needed */

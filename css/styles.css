@@ -155,7 +155,7 @@ img {
 }
 
 .profile-pic {
-    width: 80%;
+    width: 40%;
     margin: 50px auto 0;
     overflow: hidden;  
 }
@@ -577,6 +577,11 @@ footer {
 }
 
 @media (max-width: 767px)  {
+
+    .profile-pic {
+        width: 70%;
+    }
+
     .profession {
         font-size: 2.8rem;
     }
@@ -657,6 +662,11 @@ footer {
 
 
 @media (max-width: 465px) {
+
+    .profile-pic {
+        width: 80%;
+    }
+
     .profession {
         font-size: 1.5rem;
     }

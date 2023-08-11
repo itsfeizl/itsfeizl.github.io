@@ -18,7 +18,7 @@ p {
     font-size: 1.1rem;
 }
 
-h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif;
 }
 
@@ -89,21 +89,21 @@ img {
 }
 
 .offcanvas-body ul.navbar-nav li.nav-item {
-    margin-bottom: 15px; /* Add space between each menu item */
+    margin-bottom: 15px;
 }
 
 .offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 18px; /* Increase the font size */
-    padding: 10px 15px; /* Adjust padding for better click area */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
-    display: block; /* Make link items a block element */
-    color: #fff; /* Set default text color */
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    color: #fff;
 }
 
 .offcanvas-body ul.navbar-nav li.nav-item a.nav-link:hover {
-    font-weight: 600; /* Change background color on hover */
-    text-decoration: none; /* Remove underline on hover */
+    font-weight: 600;
+    text-decoration: none;
 }
 
 /*  END NAVBAR SECTION  */
@@ -133,25 +133,25 @@ img {
     justify-content: space-around;  
 }
 
-.profession {
-    font-size: 4.5rem;
-    font-weight: 700;
-    font-family: 'Lora', serif; 
-    line-height: 0.8; 
+.name {
+    font-size: 6rem;
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
 }
 
-.name {
-    font-family: 'Poppins', serif;
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 1;  
-    font-weight: 300;
-    margin-bottom: 20px;
+.skill {
+    margin: 20px 0;
 }
 
-.name span {
-    color: #01a2e2;
+.skill p {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.skill span {
+    color: #1EBC87;
 }
 
 .profile-pic {
@@ -207,7 +207,7 @@ img {
     font-family: 'Lora', serif;
     line-height: 1;
     text-align: right;
-    color:#01a2e2 /*CCD6F6*/;
+    color:#01a2e2;
 }
 
 .about-section-text {
@@ -247,8 +247,8 @@ img {
     display: flex;
     flex-direction: row;
     text-align: left;
-    color:#4b4b4d /*CCD6F6*/;
-    border-left: 1px solid rgba(1, 162, 226, 1)/*rgba(100, 255, 218, 0.8)*/;
+    color:#4b4b4d;
+    border-left: 1px solid rgba(1, 162, 226, 1);
     padding-left: 20px;
 }
 
@@ -350,7 +350,6 @@ img {
 .category-link.active {
     color: #01a2e2;
     font-weight: 600
-    /*border-top: 1px solid #01a2e2;*/
 }
 
 .white-icon {
@@ -358,12 +357,9 @@ img {
 }
 
 .icon-wrapper {
-    text-align: center; /* Center the icons */
-    margin-bottom: 10px; /* Add space below the icons */
+    text-align: center;
+    margin-bottom: 10px;
 }
-
-
-
 
 /*  END PROJECTS SECTION  */
 
@@ -379,7 +375,6 @@ img {
     text-align: center;
     width: 100%;
     padding: 100px 20px;
-    /*background-color: #4682b4;*/
     margin-top: 70px;
 }
 
@@ -439,8 +434,6 @@ form {
     background-color: #555;
   }
 
-
-
 .contact-links i {
     font-size: 2.rem;
 }
@@ -497,13 +490,14 @@ footer {
 
 
 @media (max-width: 991px) {
-    /*WELCOME*/
-    .profession {
-        font-size: 3.5rem;
-    }
 
+    /*WELCOME*/
     .name {
-        font-size: 2rem;
+        font-size: 6rem;
+    }
+    
+    .skill p {
+        font-size: 1.5rem;
     }
 
     .for-small {
@@ -582,15 +576,13 @@ footer {
         width: 70%;
     }
 
-    .profession {
-        font-size: 2.8rem;
-    }
-
     .name {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
-
-
+    
+    .skill p {
+        font-size: 1.2rem;
+    }
 
     .contact-section-text {
         width: 90%;
@@ -606,12 +598,15 @@ footer {
     p {
         font-size: 0.9rem;
     }
-    .profession {
-        font-size: 2rem;
-    }
 
     .name {
-        font-size: 1.3rem;
+        font-size: 3rem;
+    }
+    
+    .skill p {
+        font-size: 1.1rem;
+        width: 90%;
+        margin: 0 auto;
     }
 
     /* ABOUT */
@@ -662,177 +657,16 @@ footer {
 
 
 @media (max-width: 465px) {
-
     .profile-pic {
         width: 80%;
     }
 
-    .profession {
-        font-size: 1.5rem;
-    }
-
     .name {
-        font-size: 1.1rem;
-    }
-}
-
-
-/*
-@media (min-width: 640px) {
-    
-	.title {
-			font-size: 1.4rem;
-	}
-    
-    .dropdown {
-        display: none;
-    }
-    
-    .nav-list {
-        display: block;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .nav-list ul {
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        background-color: #fff;
-    }
-    
-    .nav-list ul li {
-        list-style-type: none;
-        font-size: 1.3rem;
-        color: #4682b4;
-        font-weight: normal;
-    }
-    
-    .nav-list ul li a {
-        color: #0A192F;
-        font-size: 1.2rem;
-        padding: 3px 20px;
-        text-decoration: none;
-    }
-    
-    .resume {
-        border: 1px solid ;
-        border-radius: 8px;
-        color: #fff !important;
-        background-color: #4682b4;
-        margin-left: 10px;
-    } 
-    
-    .nav-list ul li a:hover {
-        color: #03a893;
-        transition: 0.15s ease-in-out
-    }
-    
-    .resume:hover {
-        background-color: #03a893;
-        color: #fff !important;
-    }
-    
-    #welcome-section {
-        
-        margin: 0px auto;
-        text-align: center;
-        align-items: center
-    }
-    
-   #welcome-section p {
-    font-size: 2.5rem;
-    }
-
-    #welcome-section h1 {
         font-size: 3rem;
     }
     
-    .button {
-        font-size: 1.5rem;
-    }
-    
-    .section-header h2 {
-        font-size: 2rem;
-    }
-    
-    .about-text p {
-        width: 80%;
-        margin: 0 auto;
-        font-size: 1.4rem;
-    }
-    
-    .lang-header {
-        font-size: 2rem;
-    } 
-
-    
-    .lang-text {
-        width: 60%;
-        margin: 0 auto;
-        font-size: 1.4rem;
-    }
-    
-    .lang ul {
-        font-size: 1.8rem;
-        margin: 15px 0;
-    }
-    
-    .projects-section-header {
-        font-size: 2rem;
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-columns: 48% 48%;
-        grid-gap: 4%;
-        margin-bottom: 0;
-    }
-    
-    .grids {
-        margin-bottom: 0px;
-    }
-    
-    .project-description {
-        font-size: 1.2rem;
-    }
-    
-    #contact {
-        margin-top: 200px;
-    }
-    
-    .contact-section-top p {
-        font-size: 2rem;
-        width: 60%;
-    }
-    
-    #contact-btn {
-        font-size: 1.5rem;
-    }
-    
-    .contact-links a {
-        font-size: 1.5rem;
-    }
-    
-    footer {
-        font-size: 1.5rem;
+    .skill p {
+        font-size: 1.1rem;
+        width: 100%;
     }
 }
-
-
-@media (min-width: 1025px) {
-    
-    .grid {
-        display: grid;
-        grid-template-columns: 31% 31% 31%;
-        grid-gap: 3.5%;
-    }
-    
-    #contact {
-        margin-top: 160px;
-    }  
-}
-*/
-

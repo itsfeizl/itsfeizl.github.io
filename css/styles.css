@@ -204,10 +204,9 @@ img {
 
 .section-heading h2 {
     font-size: 3rem;
-    font-family: 'Lora', serif;
+    font-family: "Oswald", sans-serif;
     line-height: 1;
     text-align: right;
-    color:#01a2e2;
 }
 
 .about-section-text {

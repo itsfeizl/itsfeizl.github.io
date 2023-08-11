@@ -298,8 +298,18 @@ img {
 
 .projects-navigation {
     display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+    justify-content: space-between;
+    margin: 0 auto 60px;
+    width: 80%;
+    padding: 0 10px;
+    background-color: #ccc;
+}
+
+.projects-navigation h4 {
+    font-family: "Oswald" sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .projects-navigation-box {
@@ -531,6 +541,11 @@ footer {
         border-bottom: 1px solid #01a2e2;
     }
 
+    .projects-navigation {
+        width: 100%;
+        padding: 0;
+    }
+
     /* CONTACT */
 
     .contact-section-text {
@@ -643,5 +658,14 @@ footer {
     .skill p {
         font-size: 1.1rem;
         width: 100%;
+    }
+
+    .projects-navigation {
+        flex-direction: column;
+    }
+
+    .projects-navigation-box {
+        width: 40%;
+        margin: 20px auto 0;
     }
 }

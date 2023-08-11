@@ -92,15 +92,15 @@
                 <a
                   class="nav-link active link-light"
                   aria-current="page"
-                  href="#"
+                  href="#welcome"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="#">About</a>
+                <a class="nav-link link-light" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="#">Contact</a>
+                <a class="nav-link link-light" href="contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -120,11 +120,19 @@
             <div class="skill for-large">
               <p class="profession">I'm a <span>Graphic Designer</span> and <span>Web Developer.</span></p>
               <p class="love">I love crafting visually appealing websites and web applications.</p>
-              <p style="margin-top: 20px;">Let's talk about your project<i class='fa fa-arrow-right' style="margin-left: 10px; color: #01a2e2"></i></p>
+              <p style="margin-top: 20px;">Let's talk about your project
+                <a href="#contact">
+                  <i class='fa fa-arrow-right' style="margin-left: 10px; color: #01a2e2"></i>
+                </a>
+              </p>
             </div>
             <div class="skill for-small">
               <p>I'm a <span>Graphic Designer</span> and <span>Web Developer</span>. I love crafting visually appealing websites and web applications.</p>
-              <p style="margin-top: 20px;">Let's talk about your project<i class='fa fa-arrow-right' style="margin-left: 10px; color: #01a2e2"></i></p>
+              <p style="margin-top: 20px;">Let's talk about your project
+                <a href="#contact">
+                  <i class='fa fa-arrow-right' style="margin-left: 10px; color: #01a2e2"></i>
+                </a>
+              </p>
             </div>
             <div class="profile-pic">
               <img class="image" src="images/man.png" alt="Faisal" />
@@ -251,34 +259,24 @@
       <section id="projects">
         <div class="container projects-section">
           <div class="row">
-            <div class="col-lg-1"></div>
-
-            <div class="col-lg-10 px-0">
-              <!--
-              <div class="section-heading section-heading-projects">
-                <h2>Things I've Built</h2>
+            <div class="projects-navigation">
+              <div class="projects-navigation-box">
+                <ul class="category-links">
+                  <li>
+                    <a href="#" class="category-link active" data-category="web-dev"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="category-link m-0" data-category="ux-design"></a>
+                  </li>
+                </ul>
               </div>
-              <ul class="category-links">
-                <li>
-                  <a
-                    href="#"
-                    class="category-link active"
-                    data-category="web-dev"
-                    >Web Dev</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="category-link" data-category="ux-design"
-                    >UX Design</a
-                  >
-                </li>
-              </ul>
-              -->
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 px-0">
               <div class="row projects-container" id="projects-container">
                 <!-- Projects will be dynamically added here using JavaScript -->
               </div>
             </div>
-
             <div class="col-lg-1 for-large"></div>
           </div>
         </div>

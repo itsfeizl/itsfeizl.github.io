@@ -361,7 +361,7 @@ img {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 100px 40px;
+    padding: 100px 20px;
     margin-top: 70px;
 }
 
@@ -533,19 +533,6 @@ footer {
         top: 0
     }
 
-    .socials {
-        position: absolute;
-        bottom: 0;
-        padding: 15px 0 13px;
-        border: 0;
-        border-top: 1px solid rgba(1, 162, 226, 1);
-        border-bottom: 1px solid rgba(1, 162, 226, 1);
-    }
-
-    .socials .fab {
-        margin-top: 0px;
-    }
-
     /* PROJECTS */
 
     .projects-container {
@@ -564,7 +551,18 @@ footer {
         border-bottom: 1px solid #01a2e2;
     }
 
-    
+    /* CONTACT */
+
+    .contact-section-text {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .socials {
+        align-items: center;
+        justify-content: center;
+    }  
 }
 
 @media (max-width: 767px)  {

@@ -205,9 +205,10 @@ img {
 
 .section-heading h2 {
     font-size: 3rem;
-    font-family: 'Lora', serif;
+    font-family: "Oswald", sans-serif;
     line-height: 1;
     text-align: right;
+    text-transform: uppercase;
 }
 
 .about-section-text {
@@ -232,9 +233,11 @@ img {
 
 .tech-stack h3 {
     font-size: 2rem;
-    font-family: 'Lora', serif;
+    font-family: "Oswald", sans-serif;
     line-height: 1;
     margin-top: 10px;
+    color: #01a2e2;
+    text-transform: uppercase;
 }
 
 .tech-stack ul {

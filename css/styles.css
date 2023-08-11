@@ -200,6 +200,7 @@ img {
     align-items: flex-end;
     border-right: 1px solid rgba(1, 162, 226, 1);
     padding-right: 20px;
+    color: #01a2e2;
 }
 
 .section-heading h2 {
@@ -239,21 +240,6 @@ img {
 .tech-stack ul {
     list-style-type: none;
     padding: 0px;
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    color:#4b4b4d;
-    border-left: 1px solid rgba(1, 162, 226, 1);
-    padding-left: 20px;
-}
-
-.socials .fab {
-    font-size: 1.8rem;
-    margin-top: 15px;
-    padding-right: 10px;
 }
 
 .for-large {

@@ -151,7 +151,7 @@ img {
 }
 
 .skill span {
-    color: #1EBC87;
+    color: #01a2e2;
 }
 
 .profile-pic {
@@ -204,7 +204,7 @@ img {
 
 .section-heading h2 {
     font-size: 3rem;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Lora', serif;
     line-height: 1;
     text-align: right;
 }
@@ -231,7 +231,7 @@ img {
 
 .tech-stack h3 {
     font-size: 2rem;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Lora', serif;
     line-height: 1;
     margin-top: 10px;
 }

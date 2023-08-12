@@ -187,7 +187,7 @@ img {
     text-align: center;
     width: 100%;
     color: #4b4b4d;
-    padding: 140px 20px;
+    padding: 140px 20px 60px;
 }
 
 .about-container {
@@ -255,6 +255,8 @@ img {
 }
 
 
+
+
 /* END ABOUT ME SECTION */
 
 
@@ -298,9 +300,10 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto 60px;
-    width: 80%;
+    margin: 0 auto 40px;
+    width: 100%;
     padding: 0 10px;
+    
 }
 
 .projects-navigation-box {
@@ -310,7 +313,7 @@ img {
 }
 
 .horizontal-bars {
-    width: 50%;
+    width: 75%;
     height: 1px;
     background-color: #01a2e2;
 }
@@ -318,7 +321,7 @@ img {
 .category-links {
     list-style-type: none;
     padding: 0;
-    margin: 0 30px;
+    margin: 0;
     display: flex;
   }
   
@@ -543,6 +546,10 @@ footer {
     .projects-navigation {
         width: 100%;
         padding: 0;
+    }
+
+    .horizontal-bars {
+        width: 100%;
     }
 
     /* CONTACT */

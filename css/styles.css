@@ -662,6 +662,11 @@ footer {
 }
 
 @media (max-width: 606px) {
+
+    .info-text {
+        padding-top: 0px;
+    }
+
     p {
         font-size: 0.9rem;
     }
@@ -729,7 +734,7 @@ footer {
 
 @media (max-width: 465px) {
     .profile-pic {
-        width: 50%;
+        width: 60%;
     }
 
     .image-hr {

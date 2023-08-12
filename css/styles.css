@@ -161,7 +161,7 @@ img {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-    padding: 50px 0;
+    padding: 50px 0px;
 }
 
 .name {
@@ -281,6 +281,10 @@ img {
 }
 
 .for-small {
+    display: none;
+}
+
+.for-smaller-welcome-text {
     display: none;
 }
 
@@ -512,11 +516,11 @@ footer {
     
 
     /*WELCOME*/
+
     .info-text {
         width: 70%;
         align-items: left;
         text-align: left;
-        padding: 20px 0;
     }
     
     .info-text p {
@@ -624,7 +628,7 @@ footer {
         width: 100%;
         align-items: center;
         text-align: center;
-        padding: 20px 0;
+        padding: 20px;
     }
     
     .info-text p {
@@ -748,5 +752,13 @@ footer {
     .projects-navigation-box {
         width: 100%;
         margin: 20px auto 0;
+    }
+
+    .for-smaller-welcome-text {
+        display: block;
+    }
+
+    .for-larger-welcome-text {
+        display: none;
     }
 }

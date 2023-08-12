@@ -90,6 +90,7 @@ img {
 
 .offcanvas-body ul.navbar-nav li.nav-item {
     margin-bottom: 15px;
+    
 }
 
 .offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
@@ -98,13 +99,33 @@ img {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     display: block;
-    color: #fff;
+    color: #4d4d4d;
+}
+
+.offcanvas-body ul.navbar-nav li.nav-item a.contract {
+    padding-right: 0;
 }
 
 .offcanvas-body ul.navbar-nav li.nav-item a.nav-link:hover {
     font-weight: 600;
     text-decoration: none;
 }
+
+@media (max-width: 991px) {
+    .offcanvas-body {
+      background-color: #01a2e2; /* Blue background color for medium and smaller screens */
+      color: white; /* White text color for medium and smaller screens */
+    }
+  
+    .offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
+      color: white; /* White text color for medium and smaller screens */
+    }
+
+    .offcanvas-body ul.navbar-nav li.nav-item a.contract {
+        padding-right: 15px;
+    }
+  }
+  
 
 /*  END NAVBAR SECTION  */
 
@@ -130,8 +151,7 @@ img {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end; 
-    position: relative;
-    padding: 0 20px; 
+    position: relative; 
 }
 
 .info-text {
@@ -141,7 +161,7 @@ img {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .name {
@@ -487,6 +507,9 @@ footer {
 
 
 @media (max-width: 991px) {
+
+    /* NAVBAR */
+    
 
     /*WELCOME*/
     .info-text {

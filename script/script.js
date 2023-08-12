@@ -1,5 +1,5 @@
 const projectsContainer = document.getElementById("projects-container");
-      const categoryLinks = document.querySelectorAll(".category-link");
+const categoryLinks = document.querySelectorAll(".category-link");
 
       const projects = [
         {

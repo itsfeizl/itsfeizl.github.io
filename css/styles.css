@@ -628,7 +628,7 @@ footer {
         width: 100%;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 0 20px 20px;
     }
     
     .info-text p {

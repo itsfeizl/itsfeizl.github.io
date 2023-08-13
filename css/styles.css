@@ -11,6 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0; 
+    background-color: #F8F9FA;
     color: #333333; 
 }
 
@@ -32,6 +33,11 @@ img {
 
 .navbar {
     padding: 10px 20px;
+    background-color: #ebebeb;
+}
+
+.offcanvas-header {
+    background-color: #333333;
 }
 
 .logo {

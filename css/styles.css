@@ -96,11 +96,6 @@ img {
     box-shadow: none;
 }
 
-.offcanvas-body ul.navbar-nav li.nav-item {
-    margin-bottom: 15px;
-    
-}
-
 .offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
     font-size: 18px;
     padding: 10px 15px;
@@ -191,6 +186,11 @@ img {
 .skill span {
     color: #000; /*1EBC87;*/
     font-weight: 600;
+}
+
+.next-project {
+    display: flex;
+    align-items: center;
 }
 
 .profile-pic {
@@ -409,17 +409,22 @@ img {
 
 .socials {
     display: flex;
+    align-items: center;
     flex-direction: row;
     text-align: left;
-    color:#4b4b4d;
 }
 
 .socials a {
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-.socials .fab {
+.socials a:hover {
+    color: #666
+}
+
+.socials .fab, .fa-envelope {
     font-size: 2.5rem;
     margin-top: 15px;
     padding-right: 10px;
@@ -465,23 +470,17 @@ form {
     cursor: pointer;
   }
 
-  button[type="submit"]:hover {
-    background-color: #555;
+/* Add this CSS rule to disable the hover effect and pointer cursor */
+.disable-hover {
+    cursor: default; /* Set cursor to default */
+    /* Add any other styles you want to apply when hover is disabled */
   }
-
-.contact-links i {
-    font-size: 2.rem;
-}
-
-.contact-links a {
-    padding: 0px 5px;
-    color: #fff;
-	text-decoration: none;
-}
-
-.contact-links a:hover {
-    color: #4682b4;
-}
+  
+  /* Keep the original hover effect style for the button */
+  button[type="submit"]:hover:not(.disable-hover) {
+    background-color: #555;
+    /* Add any other hover effect styles you want to apply */
+  }
 
 /*  END CONTACT SECTION  */
 
@@ -507,6 +506,29 @@ footer {
     font-size: 0.9rem;
 }
 
+.footer-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+}
+
+.footer-icons a {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.footer-icons a:hover {
+    color: #666
+}
+
+.footer-icons .fab {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    padding-right: 10px;
+}
+
 
 
 
@@ -515,7 +537,10 @@ footer {
 @media (max-width: 991px) {
 
     /* NAVBAR */
-    
+    .offcanvas-body ul.navbar-nav li.nav-item {
+        margin-bottom: 15px;
+        
+    }
 
     /*WELCOME*/
 

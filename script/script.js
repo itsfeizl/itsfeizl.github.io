@@ -38,7 +38,7 @@ const categoryLinks = document.querySelectorAll(".category-link");
           category: "web-dev",
           stack: ["HTML, CSS"],
           link: "images/external-link.png",
-          linkhref: "originaltrombonesgh.netlify.app",
+          linkhref: "https://originaltrombonesgh.netlify.app/",
           git: null,
           githref: null
         },
@@ -48,7 +48,7 @@ const categoryLinks = document.querySelectorAll(".category-link");
           category: "web-dev",
           stack: ["HTML, CSS"],
           link: "images/external-link.png",
-          linkhref: "algreatest.netlify.app",
+          linkhref: "https://aligreatest.netlify.app/",
           git: null,
           githref: null
         }
@@ -142,42 +142,69 @@ categoryLinks.forEach((link) => {
 });
 
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contact-form");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const formFields = document.querySelectorAll('#contact-form input, #contact-form textarea, #contact-form button[type="submit"]');
+  const alertMessage = document.querySelector('.alert');
+  const submitButton = document.querySelector('button[type="submit"]');
+  const socialIcons = document.querySelectorAll(".contact-details i");
 
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
+  // Function to change social media icons color
+  function changeIconColor(color) {
+    socialIcons.forEach((icon) => {
+      icon.style.color = color;
+    });
+  }
 
-          // Client-side validation
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const message = document.getElementById("message").value.trim();
+  // Function to handle form field click
+  function handleFieldClick() {
+    alertMessage.style.display = 'block';
+    formFields.forEach(f => f.setAttribute('disabled', 'true'));
+    submitButton.classList.add('disable-hover'); // Add the "disable-hover" class
+    changeIconColor("#01a2e2"); // Change icon color to red
+  }
 
-          if (!name || !email || !message) {
-            alert("Please fill in all fields.");
-            return;
-          }
+  // Attach click event listeners to form fields
+  formFields.forEach(field => {
+    field.addEventListener('click', handleFieldClick);
+  });
 
-          // Send data to server using fetch
-          const formData = new FormData();
-          formData.append("name", name);
-          formData.append("email", email);
-          formData.append("message", message);
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-          fetch("your-server-endpoint", {
-            method: "POST",
-            body: formData,
-          })
-            .then((response) => {
-              if (response.ok) {
-                alert("Form submitted successfully.");
-                form.reset();
-              } else {
-                alert("Error submitting form. Please try again later.");
-              }
-            })
-            .catch((error) => {
-              console.error("Error:", error);
-            });
-        });
+    // Client-side validation
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    // Send data to server using fetch
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    fetch("your-server-endpoint", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Form submitted successfully.");
+          form.reset();
+          formFields.forEach(f => f.removeAttribute('disabled'));
+          submitButton.classList.remove('disable-hover'); // Remove the "disable-hover" class
+          changeIconColor("#333"); // Reset icon color to default
+        } else {
+          alert("Error submitting form. Please try again later.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
       });
+  });
+});

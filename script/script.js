@@ -4,16 +4,20 @@ const categoryLinks = document.querySelectorAll(".category-link");
       const projects = [
         {
           link: "images/external-link.png",
+          linkhref: "https://littlelemongh.netlify.app/",
           git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/little-lemon",
           title: "Little Lemon",
           description:
             "A single page web app for helping me choose where to travel",
           category: "web-dev",
-          stack: ["Bootstrap", "React", "Node.js"],
+          stack: ["React"],
         },
         {
           link: "images/external-link.png",
+          linkhref: "https://littlelemongh.netlify.app/",
           git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/little-lemon",
           title: "Project 2",
           description: "Description of Project 2",
           category: "web-dev",
@@ -21,7 +25,9 @@ const categoryLinks = document.querySelectorAll(".category-link");
         },
         {
           link: "images/external-link.png",
+          linkhref: "https://littlelemongh.netlify.app/",
           git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/little-lemon",
           title: "Project 3",
           description: "Description of Project 3",
           category: "web-dev",
@@ -29,7 +35,9 @@ const categoryLinks = document.querySelectorAll(".category-link");
         },
         {
           link: "images/external-link.png",
+          linkhref: "https://littlelemongh.netlify.app/",
           git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/little-lemon",
           title: "Project 4",
           description: "Description of Project 4",
           category: "ux-design",
@@ -37,7 +45,9 @@ const categoryLinks = document.querySelectorAll(".category-link");
         },
         {
           link: "images/external-link.png",
+          linkhref: "https://littlelemongh.netlify.app/",
           git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/little-lemon",
           title: "Project 5",
           description: "Description of Project 4",
           category: "ux-design",
@@ -45,7 +55,9 @@ const categoryLinks = document.querySelectorAll(".category-link");
         },
         {
           link: "images/external-link.png",
+          linkhref: "https://littlelemongh.netlify.app/",
           git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/little-lemon",
           title: "Project 6",
           description: "Description of Project 4",
           category: "ux-design",
@@ -64,12 +76,12 @@ const categoryLinks = document.querySelectorAll(".category-link");
                   <!-- Project HTML content -->
                   <div style="display: flex;">
                     <div style="width: 20px; margin-right: 5px">
-                      <a href="#"><img src=${
+                      <a href=${project.linkhref} target="_blank"><img src=${
                         project.link
                       } style="max-width: 100%" /></a>
                     </div>
                     <div style="width: 20px;">
-                      <a href="#"><img src=${
+                      <a href=${project.githref} target="_blank"><img src=${
                         project.git
                       } style="max-width: 100%" /></a>
                     </div>

@@ -9,29 +9,49 @@ const categoryLinks = document.querySelectorAll(".category-link");
           githref: "https://github.com/itsfeizl/little-lemon",
           title: "Little Lemon",
           description:
-            "A single page web app for helping me choose where to travel",
+            "Capstone project for Meta's Front-End Developer Certificate on Coursera",
           category: "web-dev",
           stack: ["React"],
         },
         {
-          link: "images/external-link.png",
-          linkhref: "https://littlelemongh.netlify.app/",
+          link: null,
+          linkhref: null,
+          git: "images/github-square.png",
+          githref: "https://github.com/itsfeizl/Perspectives",
+          title: "Perspectives",
+          description: "Blogsite for exploring life, design, and code.",
+          category: "web-dev",
+          stack: ["Python", "Flask", "Bootstrap"],
+        },
+        {
+          link: null,
+          linkhref: null,
           git: "images/github-square.png",
           githref: "https://github.com/itsfeizl/little-lemon",
-          title: "Project 2",
-          description: "Description of Project 2",
+          title: "Briefer",
+          description: "AI-powered news app that summarizes important new updates from global sources.",
           category: "web-dev",
-          stack: ["Bootstrap", "React", "Node.js"],
+          stack: ["Python", "Flask", "BeautifulSoup", "ChatGPT"],
         },
         {
           link: "images/external-link.png",
-          linkhref: "https://littlelemongh.netlify.app/",
-          git: "images/github-square.png",
-          githref: "https://github.com/itsfeizl/little-lemon",
-          title: "Project 3",
-          description: "Description of Project 3",
+          linkhref: "originaltrombonesgh.netlify.app",
+          git: null,
+          githref: null,
+          title: "Original Trombones",
+          description: "Redesigning landing page for Original Trombones ()",
           category: "web-dev",
-          stack: ["Bootstrap", "React", "Node.js"],
+          stack: ["HTML, CSS"]
+        },
+        {
+          link: "images/external-link.png",
+          linkhref: "algreatest.netlify.app",
+          git: null,
+          githref: null,
+          title: "The Greatest",
+          description: "Tribute page for the late Muhammed Ali.",
+          category: "web-dev",
+          stack: ["HTML, CSS"]
         },
         {
           link: "images/external-link.png",
@@ -75,16 +95,21 @@ const categoryLinks = document.querySelectorAll(".category-link");
                 <div class="project" style="padding-bottom: 0">
                   <!-- Project HTML content -->
                   <div style="display: flex;">
-                    <div style="width: 20px; margin-right: 5px">
-                      <a href=${project.linkhref} target="_blank"><img src=${
-                        project.link
-                      } style="max-width: 100%" /></a>
-                    </div>
-                    <div style="width: 20px;">
-                      <a href=${project.githref} target="_blank"><img src=${
-                        project.git
-                      } style="max-width: 100%" /></a>
-                    </div>
+                    ${
+                      (project.link && project.linkhref) 
+                        ? `<div style="width: 20px; margin-right: 5px">
+                            <a href=${project.linkhref} target="_blank"><img src=${project.link}
+                            style="max-width: 100%" /></a>
+                          </div>`
+                        : ""
+                    }
+                    ${
+                      (project.git && project.githref) 
+                        ? `<div style="width: 20px;">
+                            <a href=${project.githref} target="_blank"><img src=${project.git} style="max-width: 100%" /></a>
+                          </div>`
+                        : ""
+                    }
                   </div>
                   <div style="text-align: left; justify-content: space-between">
                     <h5>${project.title}</h5>
@@ -99,6 +124,8 @@ const categoryLinks = document.querySelectorAll(".category-link");
             projectsContainer.innerHTML += projectHtml;
           });
       }
+      
+
 
       categoryLinks.forEach((link) => {
         link.addEventListener("click", function (event) {

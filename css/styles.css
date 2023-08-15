@@ -537,10 +537,7 @@ footer {
 @media (max-width: 991px) {
 
     /* NAVBAR */
-    .offcanvas-body ul.navbar-nav li.nav-item {
-        margin-bottom: 15px;
-        
-    }
+    
 
     /*WELCOME*/
 

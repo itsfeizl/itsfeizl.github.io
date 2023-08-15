@@ -195,13 +195,14 @@ img {
 
 .profile-pic {
     width: 34%;
-    margin: 0px auto -30px;
+    margin: 0px auto;
     overflow: visible;  
     z-index: 30;
 }
 
 .profile-pic img {
-    max-width: 100%; 
+    max-width: 95%;
+    margin-bottom: -30px; 
 }
 
 .image-hr {
@@ -307,7 +308,7 @@ img {
 #projects {
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 60px 20px;
     margin-top: 0px;
     text-align: center;
     background-color: #F8F9FA;
@@ -339,40 +340,41 @@ img {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(85, 84, 84, 0.07) 0px 8px 8px, rgba(2, 2, 2, 0.07) 0px 16px 16px;
 }
 
-.projects-navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto 40px;
-    width: 100%;
-    padding: 0 10px;
-    
-}
-
 .projects-navigation-box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.category-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+/* Add this CSS to your stylesheet or <style> tag */
+.pagination {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .prev-button {
+    margin-right: 5px;
   }
   
-  .category-link {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: #4b4b4d;
+  .prev-button,
+  .next-button {
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    padding: 8px 16px;
+    cursor: pointer;
   }
   
-  .category-link.active {
-    background-color: #000;
+  .prev-button[disabled],
+  .next-button[disabled] {
+    cursor: not-allowed;
+    color: #333;
+  }
+  
+  .prev-button:hover:not([disabled]),
+  .next-button:hover:not([disabled]) {
+    background-color: #333;
+    color: #fff;
   }
 
 /*  END PROJECTS SECTION  */

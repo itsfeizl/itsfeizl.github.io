@@ -159,6 +159,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to handle form field click
   function handleFieldClick() {
     alertMessage.style.display = 'block';
+    alertMessage.style.width ="90%";
+    alertMessage.style.margin ="0 auto 20px";
     formFields.forEach(f => f.setAttribute('disabled', 'true'));
     submitButton.classList.add('disable-hover'); // Add the "disable-hover" class
     changeIconColor("#01a2e2"); // Change icon color to red

@@ -669,6 +669,8 @@ footer {
 
     .image-hr {
         width: 70%;
+        float: initial;
+        margin: 0 auto;
     }
 
     .contact-section-text {
